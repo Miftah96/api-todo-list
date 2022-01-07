@@ -19,6 +19,7 @@ const db = require("./app/model");
 db.sequelize.sync();
 
 require("./app/router/activity.js")(app);
+require("./app/router/todo.js")(app);
 
 const PORT = process.env.PORT || 8080;
 
